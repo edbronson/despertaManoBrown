@@ -1,0 +1,98 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: "dgital.ttf";
+}
+
+body, html {
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #29313e;
+    margin-top: 100px;
+}
+
+.container .alarm-container {
+    display: flex;
+    align-items: center;
+    width: 500px;
+    padding: 50px;
+    flex-direction: column;
+    border-radius: 143px;
+    color: #25f76e;
+    background: linear-gradient(145deg, #252c38, #2c3442);
+    box-shadow:  10px 10px 30px #222933,
+             -10px -10px 30px #303949;
+}
+
+.alarm-container h1 {
+    font-size: 60px;
+    font-weight: normal;
+    margin: 30px;
+}
+
+.container .content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.content.disable {
+    cursor: no-drop;
+}
+
+.container .content .alarm-controls {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid #25f76e;
+    width: 100%;
+    height: 50px;
+    margin: 10px;
+    
+}
+
+.content.disable .alarm-controls {
+    opacity: .6;
+    pointer-events: none;
+}
+
+.container .content select {
+    margin: 10px;
+    border: none;
+    background: transparent;
+    font-size: 26px;
+    font-weight: 10px;
+    color: #f7efe6;
+    cursor: pointer;
+}  
+
+.container .content select option {
+    width: 100%;
+    background: transparent;
+    font-size: 22px;
+    padding: 5px;
+    color: #29313e;
+    
+}
+
+.container button {
+    width: 210px;
+    border: none;
+    font-size: 22px;
+    padding: 17px 0;
+    margin-top: 20px;
+    border-radius: 50px;
+    background: #edda24;
+    color: #29313e;
+    cursor: pointer;
+}
+
